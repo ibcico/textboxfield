@@ -158,6 +158,12 @@
 			if ($page and !$this->addedPublishHeaders) {
 				$page->addStylesheetToHead(URL . '/extensions/textboxfield/assets/publish.css', 'screen', 10251840);
 				$page->addScriptToHead(URL . '/extensions/textboxfield/assets/publish.js', 10251840);
+
+
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/tiny_mce.js', 200);
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/assets/applyMCE.js', 210);
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/plugins/tinybrowser/tb_tinymce.js.php', 220);
+
 				
 				$this->addedPublishHeaders = true;
 			}
@@ -167,6 +173,11 @@
 			if ($page and !$this->addedSettingsHeaders) {
 				$page->addStylesheetToHead(URL . '/extensions/textboxfield/assets/settings.css', 'screen', 10251840);
 				
+
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/tiny_mce.js', 200);
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/assets/applyMCE.js', 210);
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/plugins/tinybrowser/tb_tinymce.js.php', 220);
+
 				$this->addedSettingsHeaders = true;
 			}
 		}
@@ -177,6 +188,12 @@
 				$page->addScriptToHead(URL . '/extensions/textboxfield/assets/filtering.js', 10251841);
 				$page->addStylesheetToHead(URL . '/extensions/textboxfield/assets/filtering.css', 'screen', 10251840);
 				
+
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/tiny_mce.js', 200);
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/assets/applyMCE.js', 210);
+				$page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/plugins/tinybrowser/tb_tinymce.js.php', 220);
+
+
 				$this->addedFilteringHeaders = true;
 			}
 		}
