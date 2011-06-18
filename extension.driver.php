@@ -174,6 +174,9 @@
 				Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/jquery.tinymce.js', 200);
 				Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_tinymce/assets/richtext_tinymce.publish.js', 201);
 				
+				$page->addStylesheetToHead(URL . '/extensions/richtext_tinymce/lib/jquery.tinymce.js', 200);
+				$page->addStylesheetToHead(URL . '/extensions/richtext_tinymce/assets/richtext_tinymce.publish.js', 201);
+				
 				$this->addedPublishHeaders = true;
 			}
 		}
