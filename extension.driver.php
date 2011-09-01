@@ -165,10 +165,6 @@
 				$page->addStylesheetToHead(URL . '/extensions/textboxfield/assets/publish.css', 'screen', 10251840);
 				$page->addScriptToHead(URL . '/extensions/textboxfield/assets/publish.js', 10251840);
 				
-				Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/jquery.tinymce.js', 200);
-				Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_tinymce/assets/richtext_tinymce.publish.js', 201);
-				Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_tinymce/lib/plugins/tinybrowser/tb_tinymce.js.php', 202);
-				
 				$this->addedPublishHeaders = true;
 			}
 		}
